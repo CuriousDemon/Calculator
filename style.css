@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Lato:wght@100;300;400;700;900&family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.calculator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    font-size: 1.6rem;
+    background-color: rgb(61, 38, 38);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: aqua;
+    border:4px solid rgb(93, 9, 121) ;
+    border-radius: 1rem;
+}
+
+.screen{
+    height: 8rem ;
+    width: 30rem;
+    background-color: azure;
+    grid-column: span 3 ;
+    /* padding: 3rem 15rem; */
+    border: 2px solid black;
+    border-radius: 1rem;
+
+
+}
+
+.output1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content:flex-start;
+    padding: 0rem 4rem;
+    padding-top: 1rem;
+}
+
+
+.output2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content:flex-end;
+    padding: 0rem 4rem;
+    
+    
+}
+
+
+.output3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    padding: 0rem 4rem;
+}
+
+.num{
+    padding: 1.5rem;
+    background-color: aquamarine;
+    border:1px solid black;
+    text-align: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.num:hover{
+    background-color: blanchedalmond;
+    color: black;
+}
+
+.AC{
+    background-color: rgb(176, 32, 32);
+    color: white;
+}
+
+.delete{
+    background-color: yellow;
+    color: black;
+}
+
+.add{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.minus{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.division{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.equal{
+    background-color: blue;
+    color: white;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.dot{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
